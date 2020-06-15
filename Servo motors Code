@@ -28,14 +28,14 @@ void loop()
  sensorvalue2= analogRead(pin2); 
 
  //Map the reading to 180 max because it has only 2 movement clock/counter clock wise. 
- sensorvalue1= map(sensorvalue1, 0,1023,0,180); 
+ sensorvalue1= map(sensorvalue1, 0,1023,0,179); 
 //printing just to see how the values vary when potentiometer changes
  Serial.println(sensorvalue1); 
  // setting servo position according to the reading
  motor1.write(sensorvalue1);
 delay(10); 
   
- sensorvalue2= map(sensorvalue2, 0,1023,0,180); 
+ sensorvalue2= map(sensorvalue2, 0,1023,0,179); 
  Serial.println(sensorvalue2);
  motor2.write(sensorvalue2);
  delay(10); 
