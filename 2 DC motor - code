@@ -1,3 +1,4 @@
+#include<DC_Motor.h>
 
 // Motor1:
 //Defining all pins
